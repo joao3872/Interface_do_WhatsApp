@@ -50,7 +50,7 @@ function linksClick() {
             
                 topicos[2].classList.remove('active')
                 
-                scroll.scrollLeft = 492 // <-- mais 80
+                scroll.scrollLeft = 412
                 
                 btnDigitar.style.bottom = '95px'
                 activeBtnDigitar.style.bottom = '95px'
@@ -64,7 +64,7 @@ function linksClick() {
                 topicos[0].classList.remove('active')
                 topicos[1].classList.remove('active')
                 
-                scroll.scrollLeft = 825 // <-- mais 1005
+                scroll.scrollLeft = 825
                 
                 qtdMensagens.classList.remove('active2')
             })
