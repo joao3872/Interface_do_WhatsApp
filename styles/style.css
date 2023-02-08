@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+   --white: #fff;
+   --black: #000;
+   --grey: #808080;
+   --blue: #2194ff;
+   --blue-dark: #005fb8;
+   --btn-light-grey: #e9edf0;
+   --green-header: #008069;
+   --green-button: #00a884;
+   --green-whatsapp: #25D366;
+   
+   
+   --header-dark: rgb(31, 44, 52);
+   --btn-menu-dark: rgb(35, 50, 57);
+   --background-dark: rgb(18, 27, 34);
+   --text-meta: rgb(222, 227, 233);
+   --link-blue: rgb(96, 189, 232);
+   --green-whatsapp-dark: #1ea952;
+   --btns-linkcall: rgb(133, 150, 160);
+   
+   --black-transparent-more: rgba(0, 0, 0, .1);
+   --status-off: rgba(138, 138, 138, .8);
+   --grey-transparent: rgba(138, 138, 138, .1);
+   --white-transparent: rgba(255, 255, 255, .7);
+   --white-media-transparent: rgba(255, 255, 255, .5);
+   --white-transparent-media: rgba(255, 255, 255, .4);
+   --white-transparent-more: rgba(255, 255, 255, .2);
+}
+
+body {
+    background: var(--white);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding-top: 111px;
+}
+
+header {
+    overflow: hidden;
+    position: fixed;
+}
+
+header .container_titulo, .containerTopicos {
+    display: flex;
+    align-items: center;
+}
+
+header, .containerTopicos {
+    background: var(--green-header);
+    width: 100%;
+}
+
+header .container_titulo {
+    justify-content: space-between;
+    padding: 10px 3px 12px 18px;
+}
+
+header .container_titulo h3, .iconsHeader {
+    color: var(--white);
+}
+
+header .container_titulo .iconsHeader .iconSearch {
+    padding: 10px;
+}
+
+header .container_titulo .iconsHeader .iconEllipsis {
+    padding: 10px 15px;
+}
+
+header .container_titulo .iconsHeader .iconSearch:active, .iconEllipsis:active {
+    background: var(--white-transparent-more);
+    border-radius: 30px;
+}
+
+header .containerTopicos .cam {
+    color: var(--white-transparent);
+    padding: 14px 8px;
+    font-size: 18px;
+    cursor: default;
+}
+
+header .containerTopicos .topico {
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+    color: var(--white-transparent);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    align-items: flex-end;
+    cursor: default;
+}
+
+header .containerTopicos .topico.active {
+    border-bottom: 3px solid var(--white);
+    padding-bottom: 14px;
+    color: var(--white);
+}
+
+header .containerTopicos #topico, .qtdMensagens {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .containerTopicos #topico .qtdMensagens {
+    background: var(--white-transparent);
+    color: var(--green-header);
+    margin-top: -2px;
+    gap: 0;
+}
+
+header .containerTopicos #topico .qtdMensagens.active2 {
+    background: var(--white);
+}
+
+
+main .fundo {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background: transparent;
+}
+
+main .containerMenu {
+    background: var(--white);
+    position: fixed;
+    display: none;
+    top: 4px;
+    right: 5px;
+    border-radius: 2px;
+    box-shadow: 0 5px 5px var(--black-transparent-more);
+}
+
+main .containerMenu .opcaoMenu {
+    display: block;
+    padding: 15px;
+    color: var(--black);
+    cursor: default;
+}
+
+
+main .container, .scroll {
+    width: 100%;
+    height: 100%;
+}
+
+main .container .scroll {
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-y: hidden;
+}
+
+main .container .scroll .containerPage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--white);
+    white-space: nowrap;
+}
+
+main .container .scroll .containerPage .conteudoItem, .containerArquivadas, #page3 #containerCallLink {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100vw;
+}
+
+main .container .scroll .containerPage .containerArquivadas, #page3 #containerCallLink {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 5px;
+}
+
+main .container .scroll .containerPage .containerArquivadas .iconArquivadas {
+    height: 20px;
+}
+
+main .container .scroll .containerPage .containerArquivadas p {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+main .container .scroll .containerPage .containerArquivadas p, .items h3, #containerCallLink .tituloLink {
+    color: var(--black);
+}
+
+main .container .scroll .containerPage .conteudoItem:active, .containerArquivadas:active, #page3 #containerCallLink:active, .opcaoMenu:active {
+    background: var(--black-transparent-more);
+}
+
+main .container .scroll .containerPage .conteudoItem div {
+    display: flex;
+    align-items: center;
+}
+
+main .container .scroll .containerPage .conteudoItem div .foto {
+    height: 50px;
+    width: 50px;
+    border-radius: 60px;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items h3 {
+    font-size: 17px;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items span {
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items p {
+    width: 98%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items .iconSticky {
+    height: 15px;    
+}
+
+main .container .scroll .containerPage .conteudoItem div .items .checks {
+    height: 14px;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items .iconVideo {
+    font-size: 14px;    
+}
+
+main .container .scroll .containerPage .conteudoItem div .items .icons {
+    height: 17px;
+}
+
+main .container .scroll .containerPage .conteudoItem div .items .microBlue {
+    color: var(--blue);
+}
+
+main .container .scroll .containerPage .conteudoItem div .items .microGreen {
+    color: var(--green-whatsapp);
+}
+
+main .container .scroll .containerPage .conteudoItem .periodo {
+    font-size: 13px;
+    color: var(--grey);
+}
+
+main .container .scroll .containerPage .conteudoItem #periodoGrupo {
+    margin-left: -30px;
+}
+
+main .container .scroll .containerPage .conteudoItem .containerMsgRecebida {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+main .container .scroll .containerPage .conteudoItem .containerMsgRecebida .mensagemRecebida, .qtdMensagens {
+    background: var(--green-whatsapp);
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    font-size: 11px;
+    padding: 3px 6.5px;
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+main .container .scroll .containerPage .conteudoItem .containerMsgRecebida .periodo {
+    color: var(--green-button);
+}
+
+
+main .iconChat {
+    height: 16px;
+}
+
+main .btnChat, .activeBtn {
+    background: var(--green-button);
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    box-shadow: 0 7px 5px var(--black-transparent-more);
+    position: fixed;
+    right: 18px;
+    bottom: 16px;
+}
+
+main .btnChat .activeBtn {
+    padding: 22px 18px;
+}
+
+main .activeBtn:active {
+    background: var(--white-transparent-media);
+}
+
+
+main .rodape {
+    width: 100vw;
+    border-top: 1px solid var(--grey-transparent);
+    padding: 16px 25px 115px 25px;
+    display: flex;
+}
+
+main .rodape .cadeado {
+    font-size: 11px;
+    color: var(--grey);
+    margin-right: 5px;
+}
+
+main .rodape p {
+    font-size: 12px;
+    color: var(--grey);
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+}
+
+main .rodape p a {
+    color: var(--green-button);
+}
+
+main .rodape p a:active {
+    text-decoration: underline;
+    background: rgba(0, 168, 132, .3);
+}
+
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body, .containerPage {
+        background: var(--background-dark);
+    }
+    
+    header, .containerTopicos {
+        background: var(--header-dark);
+    }
+    
+    header .container_titulo h3, .iconsHeader {
+        color: var(--white-media-transparent);
+    }
+    
+    header .containerTopicos .cam {
+        color: var(--white-media-transparent);
+    }
+    
+    header .containerTopicos .topico {
+        color: var(--white-media-transparent);
+    }
+    
+    header .containerTopicos .topico.active {
+        border-color: var(--green-button);
+        color: var(--green-button);
+    }
+    
+    header .containerTopicos #topico .qtdMensagens {
+        color: var(--header-dark);
+        background: var(--white-media-transparent);
+    }
+    
+    header .containerTopicos #topico .qtdMensagens.active2 {
+        background: var(--green-button);
+    }
+    
+    main .containerMenu {
+        background: var(--btn-menu-dark);
+    }
+    
+    main .containerMenu .opcaoMenu {
+        color: var(--white);
+    }
+    
+    main .container .scroll .containerPage .containerArquivadas p, .items h3, #containerCallLink .tituloLink {
+        color: var(--white);
+    }
+    
+    main .container .scroll .containerPage .conteudoItem:active, .containerArquivadas:active, #page3 #containerCallLink:active, .opcaoMenu:active {
+        background: var(--white-transparent-more);
+    }
+    
+    main .container .scroll .containerPage .conteudoItem div .items span {
+        color: var(--white-media-transparent);
+    }
+    
+    main .container .scroll .containerPage .conteudoItem div .items .iconVideo {
+        color: var(--grey);
+    }
+    
+    main .container .scroll .containerPage .conteudoItem .periodo {
+        color: var(--white-media-transparent);
+    }
+    
+    main .container .scroll .containerPage .conteudoItem .containerMsgRecebida .mensagemRecebida, .qtdMensagens {
+        background: var(--green-button);
+        color: var(--background-dark);
+    }
+    
+    main .rodape .cadeado {
+        color: var(--white-transparent-media);
+    }
+    
+    main .rodape p {
+        color: var(--white-media-transparent);
+    }
+}

@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Ubuntu&display=swap');
+
+main .container .scroll #page1 .conteudoItem div #status .foto2 {
+    width: 44px;
+    height: 44px;
+    border-radius: 60px;
+}
+
+main .container .scroll #page2 .conteudoItem div .containerImgs, #status {
+    display: flex;
+    align-items: flex-end;
+}
+
+main .container .scroll #page2 .conteudoItem div .containerImgs .circleplus {
+    background: var(--green-button);
+    width: 25px;
+    height: 25px;
+    border-radius: 60px;
+    padding: 2px 2.5px;
+    border: 2px solid var(--white);
+    margin: 0 0 -3px -21px;
+}
+
+main .container .scroll #page2 .conteudoItem div .containerImgs .circleplus .circlePlus {
+    height: 16px;
+}
+
+
+
+main .container .scroll #page2 .containerStatus {
+    width: 100%;
+    padding-top: 14px;
+}
+
+main .container .scroll #page2 .containerStatus h5 {
+    margin-left: 18px;
+    color: var(--grey);
+}
+
+main .container .scroll #page2 .containerStatus .revelarEOcultar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px 8px 0;
+}
+
+main .container .scroll #page2 .containerStatus .revelarEOcultar .angulo {
+    color: var(--green-button);
+}
+
+main .container .scroll #page2 .containerStatus .revelarEOcultar .girarAngulo {
+    rotate: 180deg;
+}
+
+main .container .scroll #page2 .containerStatus .containerRevelarEOcultar {
+    display: none;
+}
+
+main .container .scroll #page2 .conteudoItem div #statusOn, #statusOff, #statusOn2, #statusOff2, #status {
+    border: 3px solid var(--green-whatsapp);
+    padding: 2px;
+    border-radius: 50px;
+}
+
+main .container .scroll #page2 .conteudoItem div #statusOff, #statusOff2 {
+    border-color: var(--status-off);
+}
+
+main .container .scroll #page2 .conteudoItem div #statusOn2, #statusOff2 {
+    border-style: dashed;
+}
+
+main .container .scroll #page2 .containerStatus .containerRevelarEOcultar .conteudoItem div .containerImgs #filtro {
+    filter: opacity(25%);
+}
+
+main .container .scroll #page2 .containerStatus .containerRevelarEOcultar .conteudoItem div #opacity {
+    opacity: .4;
+}
+
+
+
+main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
+    display: none;
+    background: var(--btn-light-grey);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    box-shadow: 0 7px 5px var(--black-transparent-more);
+    position: fixed;
+    right: 25px;
+    bottom: 95px;
+    animation: animarBtn .3s;
+}
+
+main .container .scroll #page2 .btnDigitar .activeBtn2 {
+    padding: 14px;
+}
+
+main .container .scroll #page2 .activeBtn2 .iconPen {
+    height: 18px;
+}
+
+main .container .scroll #page2 .activeBtn2:active {
+    background: var(--white-transparent);
+}
+
+@keyframes animarBtn {
+    0% {
+        bottom: 45px;
+    }
+    100% {
+        bottom: 95px;
+    }
+}
+
+
+main .container .scroll #page3 #containerCallLink {
+    padding: 15px;
+}
+
+main .container .scroll #page3 #containerCallLink .containerImgLink {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+main .container .scroll #page3 #containerCallLink .containerImgLink .circleLink {
+    background: var(--green-button);
+    border-radius: 60px;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    margin-top: -2px;
+}
+
+main .container .scroll #page3 #containerCallLink .containerImgLink .circleLink .iconLink {
+    height: 26px;
+}
+
+main .container .scroll #page3 #containerCallLink div {
+    margin-left: 15px;
+}
+
+main .container .scroll #page3 #containerCallLink div .tituloLink {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main .container .scroll #page3 #containerCallLink div .textLink {
+    color: var(--grey);
+    margin-top: 3px;
+    font-size: 15px;
+    padding-right: 18px;
+    white-space: normal;
+}
+
+
+
+main .container .scroll #page3 .titulo {
+    width: 100%;
+    padding: 14px 15px;
+    color: var(--grey);
+}
+
+main .container .scroll #page3 .chamadas {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+main .container .scroll #page3 .arrow {
+    height: 12px;
+}
+
+main .container .scroll #page3 .chamadas .video, .audio {
+    height: 18px;
+}
+
+
+.modalLinkCall .cabecalhoModalLink {
+    background: var(--green-header);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.modalLinkCall .cabecalhoModalLink .circleVoltar {
+    padding: 10px 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+
+.modalLinkCall .cabecalhoModalLink .circleVoltar .voltar {
+    height: 20px;
+}
+
+.modalLinkCall .cabecalhoModalLink .circleVoltar:active {
+    background: var(--white-transparent-more);
+}
+
+.modalLinkCall .cabecalhoModalLink h3 {
+    color: var(--white);
+}
+
+.modalLinkCall .texto {
+    color: var(--black);
+    padding: 28px 15px 1px 15px;
+    font-size: 15px;
+}
+
+.modalLinkCall .texto, .typeCall, .opcoes {
+    color: var(--black);
+}
+
+.modalLinkCall .conteudoItem {
+    padding: 15px;
+}
+
+.modalLinkCall .conteudoItem:active {
+    background: var(--black-transparent-more);
+}
+
+.modalLinkCall .conteudoItem div {
+    display: flex;
+    align-items: center;
+}
+
+.modalLinkCall .conteudoItem div .callCircle {
+    background: var(--green-button);
+    width: 55px;
+    height: 55px;
+    border-radius: 60px;
+    padding: 18.5px;
+}
+
+.modalLinkCall .conteudoItem div .callCircle .iconVideo {
+    height: 18px;
+}
+
+.modalLinkCall .conteudoItem div .item {
+    margin-left: 15px;
+}
+
+.modalLinkCall .conteudoItem div .item .linkcall {
+    color: var(--blue-dark);
+    white-space: normal;
+    cursor: default;
+}
+
+.modalLinkCall .conteudoItem .type {
+    display: block;
+    padding: 0 70px;
+}
+
+.modalLinkCall .conteudoItem .type .typeCall {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.modalLinkCall .conteudoItem .type .typeText {
+    font-size: 15px;
+    color: var(--grey);
+}
+
+.modalLinkCall .btnsLinkCall {
+    border-top: 1px solid var(--grey-transparent);
+    margin-top: 18px;
+}
+
+.modalLinkCall .btnsLinkCall .conteudoItem div .iconForwarded, .iconCopy {
+    padding-left: 19px;
+}
+
+.modalLinkCall .btnsLinkCall .conteudoItem div .iconForwarded {
+    height: 17px;
+}
+
+.modalLinkCall .btnsLinkCall .conteudoItem div .iconCopy {
+    height: 25px;
+}
+
+.modalLinkCall .btnsLinkCall .conteudoItem div .iconShare {
+    height: 22px;
+    padding-left: 20px;
+}
+
+.modalLinkCall .btnsLinkCall .conteudoItem div .item .opcoes {
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 3px 0;
+}
+
+
+
+.modalDeAbertura, .containerLogoMeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalDeAbertura, .modalLinkCall {
+    background: var(--white);
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalDeAbertura .whatsapp {
+    height: 40px;
+}
+
+.modalDeAbertura .containerMeta {
+    position: absolute;
+    bottom: 28px;
+    text-align: center;
+}
+
+.modalDeAbertura .containerMeta p {
+    color: var(--grey);
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.modalDeAbertura .containerMeta .containerLogoMeta {
+    gap: 5px;
+}
+
+.modalDeAbertura .containerMeta .containerLogoMeta .meta {
+    height: 18px;
+}
+
+.modalDeAbertura .containerMeta .containerLogoMeta h3 {
+    color: var(--green-whatsapp);
+}
+
+
+.modalAviso, .modalLinkCall {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 501px) {
+    header, main, .modalDeAbertura, .textLandscape {
+        display: none;
+    }
+    
+    .modalAviso {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--white);
+    }
+    
+    .modalAviso .aviso {
+        text-align: center;
+        padding: 80px;
+    }
+    
+    .modalAviso .aviso .whatsappIcon {
+        height: 100px;
+        margin-bottom: 35px;
+    }
+    
+    .modalAviso .aviso h1 {
+        font-size: 50px;
+        color: var(--green-button);
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .modalAviso .aviso p {
+        font-weight: bold;
+        font-size: 30px;
+        font-family: 'Inconsolata', monospace;
+        color: var(--black);
+    }
+    
+    .modalAviso .aviso h1, p {
+        margin: 50px 0;
+    }
+}
+
+    
+    
+@media screen and (prefers-color-scheme: dark) {
+    main .container .scroll #page2 .conteudoItem div .containerImgs .circleplus {
+        border-color: var(--black);
+    }
+    
+    main .container .scroll #page2 .conteudoItem div .items .textStatu {
+        color: var(--white-media-transparent);
+    }
+    
+    main .container .scroll #page2 .containerStatus h5 {
+        color: var(--white-media-transparent);
+    }
+    
+    main .container .scroll #page2 .conteudoItem div #statusOn, #statusOff, #statusOn2, #statusOff2, #status {
+        border-color: var(--green-whatsapp-dark);
+    }
+    
+    main .container .scroll #page2 .containerStatus .containerRevelarEOcultar .conteudoItem div .containerImgs #filtro {
+        filter: opacity(45%);
+    }
+
+    main .container .scroll #page2 .containerStatus .containerRevelarEOcultar .conteudoItem div #opacity {
+        opacity: .5;
+    }
+    
+    main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
+        background: var(--btn-menu-dark);
+    }
+    
+    main .container .scroll #page3 #containerCallLink div .textLink {
+        color: var(--white-media-transparent);
+    }
+    
+    main .container .scroll #page3 .titulo {
+        color: var(--white-media-transparent);
+    }
+    
+    .modalLinkCall .cabecalhoModalLink {
+        background: var(--header-dark);
+    }
+    
+    .modalLinkCall .cabecalhoModalLink h3 {
+        color: var(--white-transparent);
+    }
+    
+    .modalLinkCall .texto, .typeCall, .opcoes {
+        color: var(--white);
+    }
+    
+    .modalLinkCall .conteudoItem:active {
+        background: var(--white-transparent-more);
+    }
+    
+    .modalLinkCall .conteudoItem div .item .linkcall {
+        color: var(--link-blue);
+    }
+    
+    .modalLinkCall .conteudoItem .type .typeText {
+        color: var(--btns-linkcall);
+    }
+    
+    .modalDeAbertura, .modalLinkCall {
+        background: var(--background-dark);
+    }
+    
+    .modalDeAbertura .containerMeta .containerLogoMeta h3 {
+        color: var(--text-meta);
+    }
+    
+    .modalAviso {
+        background: var(--background-dark);
+    }
+    
+    .modalAviso .aviso h1 {
+        color: var(--green-whatsapp-dark);
+    }
+    
+    .modalAviso .aviso p, .textLandscape {
+        color: var(--text-meta);
+    }
+}
+
+
+@media screen and (orientation: landscape) and (max-height: 350px) {
+    .modalAviso .aviso h1 {
+        font-size: 25px;
+    }
+    
+    .modalAviso .aviso .textLandscape {
+        display: block;
+        font-size: 20px;
+    }
+    
+    .modalAviso .aviso h1, .textLandscape {
+        margin: 25px 0;
+    }
+    
+    .modalAviso .aviso .whatsappIcon, #textAviso {
+        display: none;
+    }
+}

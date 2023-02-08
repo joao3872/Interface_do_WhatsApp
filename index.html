@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone do WhatsApp</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/faviconWhatsapp.png">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style2.css">
+    
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script2.js" defer></script>
+    
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+    
+    <header>
+        
+        <section class="container_titulo">
+            <h3>WhatsApp</h3>
+            
+            <div class="iconsHeader">
+                <span class="fas fa-search iconSearch"></span>
+        
+                <span class="fas fa-ellipsis-v iconEllipsis" id="ellipsis"></span>
+            </div>
+        </section>
+        
+        
+        <nav class="containerTopicos">
+            <a href="#" class="cam">
+                <i class="fas fa-camera"></i>
+            </a>
+        
+            <a href="#" class="topico active" id="topico">
+                Conversas
+                
+                <span class="qtdMensagens active2">1</span>
+            </a>
+        
+            <a href="#" class="topico">Status</a>
+        
+            <a href="#" class="topico">Chamadas</a>
+        </nav>
+        
+    </header>
+    
+    
+    <main>
+        
+        <section class="fundo"></section>
+        
+        <section class="containerMenu menu">
+            <a href="#" class="opcaoMenu">Novo grupo</a>
+            <a href="#" class="opcaoMenu">Nova transmissão</a>
+            <a href="#" class="opcaoMenu">Aparelhos conectados</a>
+            <a href="#" class="opcaoMenu">Mensagens favoritas</a>
+            <a href="#" class="opcaoMenu">Encontrar empresas</a>
+            <a href="#" class="opcaoMenu">Pagamentos</a>
+            <a href="#" class="opcaoMenu">Configurações</a>
+        </section>
+        
+        
+        
+        <section class="container">
+            <div class="scroll">
+            
+                <section class="containerPage" id="page1">
+                    
+                    <article class="containerArquivadas">
+                        <img src="images/icons/arquivadas.png" class="iconArquivadas" alt="arquivadas" />
+                        
+                        <p>Arquivadas</p>
+                    </article>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="images/minha_foto.png" class="foto" alt="img" />
+                        
+                            <div class="items">
+                                <h3>+55 11 98268-7500 (você)</h3>
+                        
+                                <span>
+                                    <span class="fas fa-microphone microGreen"></span>
+                            
+                                    0:18
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">21:16</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <section id="status">
+                                <img src="" class="foto2" id="avatar" alt="img" />
+                            </section>
+                            
+                            <div class="items">
+                                <h3>Mariana</h3>
+                        
+                                <span>
+                                    <img src="images/icons/checkOn.png" class="checks" alt="check on." />
+                            
+                                    Por nada !
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">14:37</p>
+                        </span>
+                    </div>
+                    
+                    
+                    <section class="conteudoItem">
+                        <div>
+                            <img src="images/group.png" class="foto" id="group" alt="img" />
+                            
+                            <div class="items">
+                                <h3>Grupo</h3>
+                                
+                                <span>
+                                    <p>Guilherme: Ok ! Aquele dia, foi muito épico !</p>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <span>
+                            <p class="periodo" id="periodoGrupo">12:30</p>
+                        </span>
+                    </section>
+                    
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>+55 11 98180-7533</h3>
+                        
+                                <span>
+                                    Vou sim !
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span class="containerMsgRecebida">
+                            <p class="periodo">11:41</p>
+                            
+                            <span class="mensagemRecebida">2</span>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <section id="status">
+                                <img src="" class="foto2" id="avatar" alt="img" />
+                            </section>
+                            
+                            <div class="items">
+                                <h3>Lucas</h3>
+                        
+                                <span>
+                                    <img src="images/icons/checkOff.png" class="checks" alt="check off." />
+                            
+                                    Bom dia !
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">09:40</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>Julia</h3>
+                        
+                                <span>
+                                    <span class="fas fa-microphone microBlue"></span>
+                            
+                                    0:15
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">06/01/2023</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>Ana</h3>
+                        
+                                <span>
+                                    <img src="images/icons/photo.png" class="icons" alt="Ícone de Foto." />
+
+                                    Foto
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">21/12/2022</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>Matheus</h3>
+                        
+                                <span>
+                                    <span class="fas fa-video iconVideo"></span>
+                            
+                                    Vídeo
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">18/12/2022</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>Vitória</h3>
+                        
+                                <span>
+                                    <span class="fas fa-video iconVideo"></span>
+                            
+                                    Vídeo
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">18/12/2022</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>Igor</h3>
+                        
+                                <span>
+                                    <img src="images/icons/sticky.svg" class="iconSticky" alt="Icon Sticky." />
+                            
+                                    Figurinha
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">07/12/2022</p>
+                        </span>
+                    </div>
+                    
+                    <div class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" id="avatar" alt="img" />
+                        
+                            <div class="items">
+                                <h3>+55 11 97301-4400</h3>
+                        
+                                <span>
+                                    <img src="images/icons/photo.png" class="icons" alt="Icon foto." />
+                            
+                                    Foto
+                                </span>
+                            </div>
+                        </div>
+                        
+                        
+                        <span>
+                            <p class="periodo">02/12/2022</p>
+                        </span>
+                    </div>
+                    
+                    
+                    <section class="rodape">
+                        
+                        <span class="fas fa-lock cadeado"></span>
+                        
+                        <p>Suas mensagens pessoais são protegidas com a <a href="#">criptografia de ponta a ponta</a></p>
+                        
+                    </section>
+                    
+                </section>
+                
+            
+            
+                <section class="containerPage" id="page2">
+                    
+                    <section class="conteudoItem">
+                        <div>
+                            <section class="containerImgs">
+                                <img src="images/minha_foto.png" class="foto" alt="img" />
+                                
+                                <span class="circleplus">
+                                    <img src="images/icons/plus.png" class="circlePlus" alt="Circle Plus." />
+                                </span>
+                            </section>
+                        
+                            <div class="items">
+                                <h3>Meu status</h3>
+                        
+                                <span class="textStatu">
+                                    Toque para atualizar seu status
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    
+                    
+                    <section class="containerStatus">
+                        
+                        <h5>Atualizações recentes</h5>
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOn">
+                                    <img src="images/churrasco.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Lucas</h3>
+                        
+                                    <span>
+                                        há 36 minutos
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOn2">
+                                    <img src="images/catedral.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Mariana</h3>
+                        
+                                    <span>
+                                        Hoje 16:55
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOn">
+                                    <img src="images/computador.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Igor</h3>
+                        
+                                    <span>
+                                        Hoje 11:02
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                    </section>
+                    
+                    
+                    <section class="containerStatus">
+                        
+                        <h5>Atualizações vistas</h5>
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOff">
+                                    <img src="images/rosquinhas.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>98180-7533</h3>
+                        
+                                    <span>
+                                        Hoje 09:02
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOff2">
+                                    <img src="images/praia.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Julia</h3>
+                        
+                                    <span>
+                                        Ontem 22:57
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOff">
+                                    <img src="images/torta.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Ana</h3>
+                        
+                                    <span>
+                                        Ontem 21:00
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOff">
+                                    <img src="images/cachorro.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Vitória</h3>
+                        
+                                    <span>
+                                        Ontem 20:27
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                        
+                        <section class="conteudoItem">
+                            <div>
+                                <section class="containerImgs" id="statusOff2">
+                                    <img src="images/gato.png" class="foto" alt="img" />
+                                
+                                </section>
+                        
+                                <div class="items">
+                                    <h3>Matheus</h3>
+                        
+                                    <span>
+                                        Ontem 19:57
+                                    </span>
+                                </div>
+                            
+                            </div>
+                        </section>
+                        
+                    </section>
+                    
+                    
+                    <section class="containerStatus">
+                        
+                        <div class="revelarEOcultar">
+                            <h5>Atualizações silenciadas</h5>
+                            
+                            <span class="fas fa-angle-down angulo"></span>
+                        </div>
+                        
+                        
+                        <div class="containerRevelarEOcultar">
+                            
+                            <section class="conteudoItem">
+                                <div>
+                                    <section class="containerImgs">
+                                    <img src="images/lanche.png" class="foto" alt="img" id="filtro" />
+                                    </section>                                    
+                        
+                                    <div class="items">
+                                        <h3 id="opacity">97301-4400</h3>
+                        
+                                        <span id="opacity">
+                                            Ontem 19:30
+                                        </span>
+                                    </div>
+                            
+                                </div>
+                            </section>
+                            
+                        </div>
+                        
+                    </section>
+                    
+                    
+                    
+                    <section class="rodape">
+                        
+                        <span class="fas fa-lock cadeado"></span>
+                        
+                        <p>Suas atualizações de status são <a href="#">protegidas com a criptografia de ponta a ponta</a></p>
+                        
+                    </section>
+                    
+                    
+                    <span class="btnDigitar">
+                        <span class="activeBtn2">
+                            <img src="images/icons/pen-solid.svg" class="iconPen" alt="Pen." />
+                        </span>
+                    </span>
+                    
+                </section>
+            
+            
+            
+                <section class="containerPage" id="page3">
+                    
+                    <article id="containerCallLink">
+                        
+                        <span class="containerImgLink">
+                            <span class="circleLink">
+                                <img src="images/icons/linkCall.png" class="iconLink" alt="Link Call." />
+                            </span>
+                        </span>
+                        
+                        <div>
+                            <p class="tituloLink">Criar link da chamada</p>
+                        
+                            <p class="textLink">Compartilhe um link para sua chamada do WhatsApp</p>
+                        </div>
+                        
+                    </article>
+                    
+                    <h5 class="titulo">
+                        Recentes
+                    </h5>
+                    
+                    <section class="conteudoItem">
+                        <div>
+                            <img src="" class="foto" alt="img" id="avatar" />
+                        
+                            <div class="items">
+                                <h3>Mariana</h3>
+                        
+                                <span>
+                                    <img src="images/icons/chamadaRecebida.png" class="arrow" alt="Chamada Recebida." />
+                            
+                                    Hoje 15:01
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <span class="chamadas">
+                            <img src="images/icons/video-solid.svg" class="video" alt="Chamada de Vídeo." />
+                        </span>
+                    </section>
+                    
+                    
+                    <section id="calls"></section>
+                    
+                    
+                    <section class="rodape">
+                        
+                        <span class="fas fa-lock cadeado"></span>
+                        
+                        <p>Suas chamadas pessoais são <a href="#">protegidas com a criptografia de ponta a ponta</a></p>
+                        
+                    </section>
+                    
+                </section>
+            
+            </div>
+        </section>
+        
+        <span class="btnChat">
+            <span class="activeBtn">
+                <img src="images/icons/add_chat.png" class="iconChat" alt="Adicionar Conversa" id="btnIcon" />
+            </span>
+        </span>
+        
+    </main>
+    
+    
+    
+    <section class="modalDeAbertura">
+        
+        <img src="images/icons/whatsapp.svg" class="whatsapp" alt="Logo do Whatsapp." />
+        
+        <section class="containerMeta">
+            <p>from</p>
+            
+            <div class="containerLogoMeta">
+                <img src="images/icons/meta.svg" class="meta" alt="Logo da Meta." />
+                
+                <h3>Meta</h3>
+            </div>
+        </section>
+        
+    </section>
+    
+    
+    
+    <section class="modalLinkCall">
+        
+        <section class="cabecalhoModalLink">
+            <span class="circleVoltar">
+                <img src="images/icons/arrow-left.svg" class="voltar" alt="Voltar." />
+            </span>
+            
+            <h3>Criar link da chamada</h3>
+        </section>
+        
+        <p class="texto">
+            Qualquer usuário do WhatsApp poderá usar este link para entrar nesta chamada. Compartilhe-o somente com quem você confia.
+        </p>
+        
+        <section class="conteudoItem">
+            <div>            
+                <span class="callCircle">
+                    <img src="images/icons/videoCall.svg" class="iconVideo" alt="img" />
+                </span>
+                        
+                <div class="item">
+                    <a href="#" class="linkcall">
+                        https://call.whatsapp.com/video /mVznWQy2r0gpSjTY93wXRC
+                    </a>
+                </div>
+            </div>            
+        </section>
+        
+        <section class="conteudoItem">
+            <div class="type">
+                <p class="typeCall">Tipo de chamada</p>
+            
+                <p class="typeText">Vídeo</p>
+            </div>
+        </section>
+        
+        <section class="btnsLinkCall">
+            
+            <section class="conteudoItem">
+                <div>
+                    <img src="images/icons/iconEnviar.png" class="iconForwarded" alt="img" />
+                        
+                    <div class="item">
+                        <p class="opcoes">
+                            Enviar link via WhatsApp
+                        </p>
+                    </div>
+                </div>            
+            </section>
+            
+            <section class="conteudoItem">
+                <div>
+                    <img src="images/icons/copy.png" class="iconCopy" alt="img" />
+                        
+                    <div class="item">
+                        <p class="opcoes">
+                            Copiar link
+                        </p>
+                    </div>
+                </div>            
+            </section>
+            
+            <section class="conteudoItem">
+                <div>
+                    <img src="images/icons/share.png" class="iconShare" alt="img" />
+                        
+                    <div class="item">
+                        <p class="opcoes">
+                            Compartilhar link
+                        </p>
+                    </div>
+                </div>            
+            </section>
+            
+        </section>
+        
+    </section>
+    
+    
+    
+    <section class="modalAviso">
+        
+        <article class="aviso">
+            
+            <img src="images/icons/whatsapp.svg" class="whatsappIcon" alt="WhatsApp Icon." />
+                    
+            <h1>Não está Disponível.</h1>
+            
+            <p id="textAviso">Este clone da Interface do WhatsApp está acessível, somente em smartphones.</p>
+            
+            <p id="textAviso">Por favor, acessar pelo seu Smartphone !</p>
+            
+            <p class="textLandscape">Por favor, vire o seu dispositivo para o mesmo, retornar para a orientação retrato !</p>
+            
+            <p class="textLandscape">Disponível, apenas em orientação retrato.</p>
+            
+        </article>
+        
+    </section>
+    
+</body>
+</html>
