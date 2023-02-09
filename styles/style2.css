@@ -35,7 +35,7 @@ main .container .scroll #page2 .containerStatus {
 main .container .scroll #page2 .containerStatus h5 {
     margin-left: 18px;
     color: var(--grey);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 main .container .scroll #page2 .containerStatus .revelarEOcultar {
@@ -162,7 +162,7 @@ main .container .scroll #page3 .titulo {
     width: 100%;
     padding: 14px 15px;
     color: var(--grey);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 main .container .scroll #page3 .chamadas {
