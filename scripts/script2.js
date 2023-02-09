@@ -381,7 +381,7 @@ function changeTheme(event) {
 
 // Escuta a mudança de Tema, na função changeTheme(event) com base no perfersColorScheme.
 
-/*prefersColorScheme.addListener(changeTheme)*/
+prefersColorScheme.addListener(changeTheme)
 
 // Após as mudanças serem escutadas, as mudanças são aplicadas.
 
