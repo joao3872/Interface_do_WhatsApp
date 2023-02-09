@@ -149,7 +149,7 @@ main .containerMenu .opcaoMenu {
     display: block;
     padding: 15px;
     color: var(--black);
-    font-size: 17px;
+    font-size: 18px;
     cursor: default;
 }
 
@@ -333,13 +333,13 @@ main .rodape {
 }
 
 main .rodape .cadeado {
-    font-size: 13px;
+    font-size: 11px;
     color: var(--grey);
     margin-right: 5px;
 }
 
 main .rodape p {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--grey);
     width: 100%;
     text-align: center;
