@@ -358,7 +358,7 @@ main .rodape p a:active {
 
 
 @media screen and (prefers-color-scheme: dark) {
-    body, .containerPage {
+    body, main .container .scroll .containerPage {
         background: var(--background-dark);
     }
     
