@@ -35,6 +35,7 @@ main .container .scroll #page2 .containerStatus {
 main .container .scroll #page2 .containerStatus h5 {
     margin-left: 18px;
     color: var(--grey);
+    font-size: 18px;
 }
 
 main .container .scroll #page2 .containerStatus .revelarEOcultar {
