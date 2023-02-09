@@ -45,7 +45,7 @@ body {
 main {
     width: 100%;
     height: 100%;
-    padding-top: 111px;
+    padding-top: 109px;
 }
 
 header {
@@ -195,7 +195,7 @@ main .container .scroll .containerPage .containerArquivadas .iconArquivadas {
 main .container .scroll .containerPage .containerArquivadas p {
     margin-left: 30px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 main .container .scroll .containerPage .containerArquivadas p, .items h3, #containerCallLink .tituloLink {
@@ -225,7 +225,7 @@ main .container .scroll .containerPage .conteudoItem div .items {
 }
 
 main .container .scroll .containerPage .conteudoItem div .items h3 {
-    font-size: 17px;
+    font-size: 19px;
 }
 
 main .container .scroll .containerPage .conteudoItem div .items span {
@@ -233,7 +233,7 @@ main .container .scroll .containerPage .conteudoItem div .items span {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 main .container .scroll .containerPage .conteudoItem div .items p {
