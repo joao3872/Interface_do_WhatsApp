@@ -143,14 +143,14 @@ main .container .scroll #page3 #containerCallLink div {
 }
 
 main .container .scroll #page3 #containerCallLink div .tituloLink {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 main .container .scroll #page3 #containerCallLink div .textLink {
     color: var(--grey);
     margin-top: 3px;
-    font-size: 15px;
+    font-size: 17px;
     padding-right: 18px;
     white-space: normal;
 }
@@ -161,6 +161,7 @@ main .container .scroll #page3 .titulo {
     width: 100%;
     padding: 14px 15px;
     color: var(--grey);
+    font-size: 18px;
 }
 
 main .container .scroll #page3 .chamadas {
@@ -203,12 +204,13 @@ main .container .scroll #page3 .chamadas .video, .audio {
 
 .modalLinkCall .cabecalhoModalLink h3 {
     color: var(--white);
+    font-size: 20px;
 }
 
 .modalLinkCall .texto {
     color: var(--black);
     padding: 28px 15px 1px 15px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .modalLinkCall .texto, .typeCall, .opcoes {
@@ -256,12 +258,12 @@ main .container .scroll #page3 .chamadas .video, .audio {
 }
 
 .modalLinkCall .conteudoItem .type .typeCall {
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 3px;
 }
 
 .modalLinkCall .conteudoItem .type .typeText {
-    font-size: 15px;
+    font-size: 17px;
     color: var(--grey);
 }
 
@@ -288,7 +290,7 @@ main .container .scroll #page3 .chamadas .video, .audio {
 }
 
 .modalLinkCall .btnsLinkCall .conteudoItem div .item .opcoes {
-    font-size: 17px;
+    font-size: 19px;
     margin-left: 15px;
     padding: 3px 0;
 }
