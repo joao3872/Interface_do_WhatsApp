@@ -36,6 +36,10 @@ let iconShare = document.querySelector('.iconShare')
 
 let whatsappIcon = document.querySelector('.whatsappIcon')
 
+let btnDigitar2 = document.querySelector('.btnDigitar2')
+
+let activeBtnDigitar2 = document.querySelector('.active2Btn')
+
 
 
 // Fecha a modal de abertura, após 350 milissegundos.
@@ -122,6 +126,13 @@ ellipsis.addEventListener('click', () => {
 fundo.addEventListener('click', () => {
     fundo.style.display = 'none'
     
+    containerMenu.style.display = 'none'
+})
+
+// Quando o scroll é movido, o menu fica oculto.
+
+document.addEventListener('scroll', () => {
+    fundo.style.display = 'none'
     containerMenu.style.display = 'none'
 })
 
@@ -337,7 +348,7 @@ inserirChamadas()
 
 
 
-// Verifica quando a página está no Dark Mode e quando está no Light Mode. E altera as imagens de formato SVG, de acordo com a verificação.
+// Verifica quando a página está no Dark Mode e quando está no Light Mode. E altera as imagens de formato SVG e PNG, de acordo com a verificação.
 
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)')
 
@@ -359,6 +370,8 @@ function changeTheme(event) {
         iconShare.setAttribute('src', 'images/icons/share2.png')
         
         whatsappIcon.setAttribute('src', 'images/icons/whatsapp2.svg')
+
+        activeBtnDigitar2.setAttribute('src', 'images/icons/penLight.svg')
     } else {
         whatsapp.setAttribute('src', 'images/icons/whatsapp.svg')
         meta.setAttribute('src', 'images/icons/meta.svg')
@@ -376,6 +389,8 @@ function changeTheme(event) {
         iconShare.setAttribute('src', 'images/icons/share.png')
         
         whatsappIcon.setAttribute('src', 'images/icons/whatsapp.svg')
+
+        activeBtnDigitar2.setAttribute('src', 'images/icons/pen-solid.svg')
     }
 }
 
@@ -386,3 +401,111 @@ prefersColorScheme.addListener(changeTheme)
 // Após as mudanças serem escutadas, as mudanças são aplicadas.
 
 changeTheme(prefersColorScheme)
+
+
+
+function exibirBtn2() {
+    btnDigitar2.style.display = 'block'
+    activeBtnDigitar2.style.display = 'block'
+}
+
+function ocultarBtn2() {
+    btnDigitar2.style.bottom = '60px'
+    activeBtnDigitar2.style.bottom = '60px'
+        
+    setTimeout(() => {
+        btnDigitar2.style.display = 'none'
+        activeBtnDigitar2.style.display = 'none'
+    }, 200)
+}
+
+// Aplica mudanças de posicionamento na scrollX, caso, a tela do dispositivo esteja na orientação paisagem.
+
+const screenLandscape = window.matchMedia('(orientation: landscape)')
+
+function positionScroll(event) {
+    if (event.matches) {
+        topicos[1].addEventListener('click', () => {
+            btnDigitar2.style.bottom = '95px'
+            activeBtnDigitar2.style.bottom = '95px'
+            exibirBtn2()
+            
+            scroll.scrollLeft = 832
+        })
+        
+        topicos[2].addEventListener('click', () => {
+            scroll.scrollLeft = 1665
+        })
+        
+        
+        scroll.addEventListener('scroll', () => {
+            let scrollX = scroll.scrollLeft
+            
+            if (scrollX < 820) {
+                topicos[0].classList.add('active')
+                topicos[1].classList.remove('active')
+                topicos[2].classList.remove('active')
+                
+                qtdMensagens.classList.add('active2')
+                
+                iconChat()
+        
+                btnDigitar2.style.display = 'none'
+                activeBtnDigitar2.style.display = 'none'
+        
+                menuConversas()
+            } else if (scrollX < 1650) {
+                topicos[1].classList.add('active')
+                topicos[0].classList.remove('active')
+                topicos[2].classList.remove('active')
+                
+                qtdMensagens.classList.remove('active2')
+        
+                exibirBtn2()
+       
+                btnDigitar2.style.bottom = '95px'
+                activeBtnDigitar2.style.bottom = '95px'
+        
+                iconCam()
+        
+                menuStatus()
+            } else {
+                topicos[2].classList.add('active')
+                topicos[0].classList.remove('active')
+                topicos[1].classList.remove('active')
+                
+                qtdMensagens.classList.remove('active2')
+        
+                iconCall()
+        
+                ocultarBtn2()
+        
+                menuChamadas()
+        
+                containerRevelarEOcultar.style.display = 'none'
+                angulo.classList.remove('girarAngulo')
+        
+                rodape.style.marginBottom = '0'
+            }
+            
+            
+            if (scrollX < 120) {
+                containerRevelarEOcultar.style.display = 'none'
+                angulo.classList.remove('girarAngulo')
+                        
+                rodape.style.marginBottom = '0'
+            } else if (scrollX > 820 && scrollX < 832) {
+                scrollTop()
+            } else if (scrollX > 1650) {
+                scrollTop()
+            }
+        })
+        
+    } else {
+        scrolls()
+    }
+}
+
+screenLandscape.addListener(positionScroll)
+
+positionScroll(screenLandscape)
