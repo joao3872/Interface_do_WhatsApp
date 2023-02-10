@@ -433,3 +433,11 @@ main .rodape p a:active {
         color: var(--white-media-transparent);
     }
 }
+
+
+@media screen and (orientation: landscape) {
+    main .rodape {
+        justify-content: center;
+        align-items: center;
+    }
+}
