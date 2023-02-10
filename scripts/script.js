@@ -134,83 +134,69 @@ function exibirBtn() {
 }
 
 
-function pauseScroll() {
-    if (scroll.scrollLeft > 818) {
-        scroll.style.overflow = 'hidden'
-    } else if (scroll.scrollLeft > 411 && scroll.scrollLeft < 413) {
-        scroll.style.overflow = 'hidden'
-    }
+
+function scrolls() {
+    scroll.addEventListener('scroll', () => {
+        let scrollX = scroll.scrollLeft
     
-    setTimeout(() => {
-        scroll.style.overflow = 'scroll'
-    }, 400)
-}
-
-
-
-scroll.addEventListener('scroll', () => {
-    let scrollX = scroll.scrollLeft
-    
-    if (scrollX < 400) {
-        topicos[0].classList.add('active')
-        topicos[1].classList.remove('active')
-        topicos[2].classList.remove('active')
+        if (scrollX < 400) {
+            topicos[0].classList.add('active')
+            topicos[1].classList.remove('active')
+            topicos[2].classList.remove('active')
         
-        qtdMensagens.classList.add('active2')
+            qtdMensagens.classList.add('active2')
                 
-        iconChat()
+            iconChat()
         
-        btnDigitar.style.display = 'none'
-        activeBtnDigitar.style.display = 'none'
+            btnDigitar.style.display = 'none'
+            activeBtnDigitar.style.display = 'none'
         
-        menuConversas()
-    } else if (scrollX < 810) {
-        topicos[1].classList.add('active')
-        topicos[0].classList.remove('active')
-        topicos[2].classList.remove('active')
-        qtdMensagens.classList.remove('active2')
+            menuConversas()
+        } else if (scrollX < 810) {
+            topicos[1].classList.add('active')
+            topicos[0].classList.remove('active')
+            topicos[2].classList.remove('active')
+            qtdMensagens.classList.remove('active2')
         
-        exibirBtn()
+            exibirBtn()
        
-        btnDigitar.style.bottom = '95px'
-        activeBtnDigitar.style.bottom = '95px'
+            btnDigitar.style.bottom = '95px'
+            activeBtnDigitar.style.bottom = '95px'
         
-        iconCam()
+            iconCam()
         
-        menuStatus()
-    } else {
-        topicos[2].classList.add('active')
-        topicos[0].classList.remove('active')
-        topicos[1].classList.remove('active')
-        qtdMensagens.classList.remove('active2')
+            menuStatus()
+        } else {
+            topicos[2].classList.add('active')
+            topicos[0].classList.remove('active')
+            topicos[1].classList.remove('active')
+            qtdMensagens.classList.remove('active2')
         
-        iconCall()
+            iconCall()
         
-        ocultarBtn()
+            ocultarBtn()
         
-        menuChamadas()
+            menuChamadas()
         
-        containerRevelarEOcultar.style.display = 'none'
-        angulo.classList.remove('girarAngulo')
+            containerRevelarEOcultar.style.display = 'none'
+            angulo.classList.remove('girarAngulo')
         
-        rodape.style.marginBottom = '0'
-    }
+            rodape.style.marginBottom = '0'
+        }
     
     
-    pauseScroll()
-    
-    
-    if (scrollX < 20) {
-        containerRevelarEOcultar.style.display = 'none'
-        angulo.classList.remove('girarAngulo')
+        if (scrollX < 20) {
+            containerRevelarEOcultar.style.display = 'none'
+            angulo.classList.remove('girarAngulo')
         
-        rodape.style.marginBottom = '0'
-    } else if (scrollX > 400 && scrollX < 412) {
-        scrollTop()
-    } else if (scrollX > 810) {
-        scrollTop()
-    }
-})
+            rodape.style.marginBottom = '0'
+        } else if (scrollX > 400 && scrollX < 412) {
+            scrollTop()
+        } else if (scrollX > 810) {
+            scrollTop()
+        }
+    })
+}
 
 
 function scrollTop() {
