@@ -347,8 +347,8 @@ main .container .scroll #page3 .chamadas .video, .audio {
 
 
 
-@media screen and (min-width: 501px) {
-    header, main, .modalDeAbertura, .textLandscape {
+@media screen and (min-width: 501px) and (min-height: 351px) {
+    header, main, .modalDeAbertura {
         display: none;
     }
     
@@ -470,27 +470,31 @@ main .container .scroll #page3 .chamadas .video, .audio {
         color: var(--green-whatsapp-dark);
     }
     
-    .modalAviso .aviso p, .textLandscape {
+    .modalAviso .aviso p {
         color: var(--text-meta);
     }
 }
 
 
-@media screen and (orientation: landscape) and (max-height: 350px) {
-    .modalAviso .aviso h1 {
-        font-size: 25px;
+@media screen and (orientation: landscape) {
+    main .container .scroll .containerPage .conteudoItem div .items p {
+        width: 100%;
+        text-overflow: normal;
     }
-    
-    .modalAviso .aviso .textLandscape {
-        display: block;
-        font-size: 20px;
+
+    .modalLinkCall {
+        overflow: scroll;
     }
-    
-    .modalAviso .aviso h1, .textLandscape {
-        margin: 25px 0;
-    }
-    
-    .modalAviso .aviso .whatsappIcon, #textAviso {
+
+    main .container .scroll .containerPage .btnDigitar, .activeBtn2, .btnDigitar2, .active2Btn {
         display: none;
+    }
+
+    main .container .scroll #page2 .btnDigitar2 .active2Btn {
+        padding: 14px;
+    }
+
+    main .container .scroll #page2 .active2Btn .iconPen2 {
+        height: 18px;
     }
 }
