@@ -94,6 +94,10 @@ main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
     animation: animarBtn .3s;
 }
 
+main .container .scroll .containerPage .btnDigitar2, .active2Btn {
+        display: none;
+}
+
 main .container .scroll #page2 .btnDigitar .activeBtn2 {
     padding: 14px;
 }
