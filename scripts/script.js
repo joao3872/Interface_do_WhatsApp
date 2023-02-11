@@ -198,7 +198,7 @@ function scrolls(event) {
     })
 }
 
-const screenPortrait = window.matchMedia('(orientation: portrait)')
+const screenPortrait = window.matchMedia('(orientation: portrait) and (min-height: 501px)')
 
 scrolls(screenPortrait)
 
