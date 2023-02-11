@@ -506,7 +506,9 @@ function positionScroll(event) {
         })
         
     } else {
-        location.reload()  // Recarrega a página.
+        if (!(event.matches)) {
+            location.reload()  // Recarrega a página.
+        }
 
         scrolls()
 
