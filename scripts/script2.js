@@ -450,8 +450,10 @@ function positionScroll(event) {
                 
                 iconChat()
         
-                btnDigitar2.style.display = 'none'
-                activeBtnDigitar2.style.display = 'none'
+                btnDigitar.style.display = 'none'
+                activeBtnDigitar.style.display = 'none'
+                
+                ocultarBtn2()
         
                 menuConversas()
             } else if (scrollX < 1650) {
@@ -505,6 +507,8 @@ function positionScroll(event) {
         
     } else {
         scrolls()
+
+        ocultarBtn2()
     }
 }
 
