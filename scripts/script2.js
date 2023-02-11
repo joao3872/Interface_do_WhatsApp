@@ -506,9 +506,10 @@ function positionScroll(event) {
         })
         
     } else {
-        if (!(event.matches)) {
-            location.reload()  // Recarrega a página.
-        }
+        // Recarrega a página, após a rotação da tela.
+        window.addEventListener('orientationchange', () => {
+            window.location.reload()
+        })
 
         scrolls()
 
