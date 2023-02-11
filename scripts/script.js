@@ -135,7 +135,7 @@ function exibirBtn() {
 
 
 
-function scrolls() {
+function scrolls(event) {
     scroll.addEventListener('scroll', () => {
         let scrollX = scroll.scrollLeft
     
@@ -197,6 +197,10 @@ function scrolls() {
         }
     })
 }
+
+const screenPortrait = window.matchMedia('(orientation: portrait)')
+
+scrolls(screenPortrait)
 
 
 function scrollTop() {
