@@ -506,11 +506,6 @@ function positionScroll(event) {
         })
         
     } else {
-        // Recarrega a página, após a rotação da tela.
-        window.addEventListener('orientationchange', () => {
-            window.location.reload()
-        })
-
         scrolls()
 
         ocultarBtn2()
@@ -520,3 +515,9 @@ function positionScroll(event) {
 screenLandscape.addListener(positionScroll)
 
 positionScroll(screenLandscape)
+
+// Recarrega a página, após a rotação da tela.
+
+window.addEventListener('orientationchange', () => {
+    window.location.reload()
+})
