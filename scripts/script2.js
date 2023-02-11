@@ -496,6 +496,8 @@ function positionScroll(event) {
                 rodape.style.marginBottom = '0'
             } else if (scrollX > 820 && scrollX < 832) {
                 scrollTop()
+            } else if (scrollX > 822 && scrollX < 1649) {
+                exibirBtn2()
             } else if (scrollX > 1650) {
                 scrollTop()
             }
