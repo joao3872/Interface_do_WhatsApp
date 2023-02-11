@@ -503,6 +503,8 @@ function positionScroll(event) {
             }
         })
         
+    } else {
+        scrolls()
     }
 }
 
