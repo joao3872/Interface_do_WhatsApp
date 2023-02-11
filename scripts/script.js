@@ -197,7 +197,7 @@ function scrolls() {
         }
     })
 }
-scrolls()
+
 
 function scrollTop() {
     window.scrollTo({
