@@ -506,6 +506,8 @@ function positionScroll(event) {
         })
         
     } else {
+        location.reload()  // Recarrega a página.
+
         scrolls()
 
         ocultarBtn2()
