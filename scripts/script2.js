@@ -501,9 +501,9 @@ function positionScroll(event) {
             }
         })
         
-    } else {
+    } /*else {
         scrolls()
-    }
+    }*/
 }
 
 screenLandscape.addListener(positionScroll)
