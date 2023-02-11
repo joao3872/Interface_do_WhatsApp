@@ -81,7 +81,7 @@ main .container .scroll #page2 .containerStatus .containerRevelarEOcultar .conte
 
 
 
-main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
+main .container .scroll .containerPage .btnDigitar, .activeBtn2, .btnDigitar2, .active2Btn {
     display: none;
     background: var(--btn-light-grey);
     width: 45px;
@@ -92,10 +92,6 @@ main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
     right: 25px;
     bottom: 95px;
     animation: animarBtn .3s;
-}
-
-main .container .scroll .containerPage .btnDigitar2, .active2Btn {
-        display: none;
 }
 
 main .container .scroll #page2 .btnDigitar .activeBtn2 {
