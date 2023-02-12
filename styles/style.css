@@ -147,7 +147,7 @@ main .containerMenu {
 
 main .containerMenu .opcaoMenu {
     display: block;
-    padding: 15px;
+    padding: 14.2px 15px;
     color: var(--black);
     font-size: 17px;
     cursor: default;
@@ -178,14 +178,14 @@ main .container .scroll .containerPage {
 main .container .scroll .containerPage .conteudoItem, .containerArquivadas, #page3 #containerCallLink {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 13px 15px;
     width: 100vw;
 }
 
 main .container .scroll .containerPage .containerArquivadas, #page3 #containerCallLink {
     justify-content: flex-start;
     align-items: center;
-    padding: 15px 30px;
+    padding: 14px 30px;
     margin-top: 5px;
 }
 
