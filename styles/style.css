@@ -87,13 +87,13 @@ header .container_titulo .iconsHeader .iconSearch:active, .iconEllipsis:active {
 
 header .containerTopicos .cam {
     color: var(--white-transparent);
-    padding: 14px 8px;
+    padding: 13px 8px;
     font-size: 18px;
     cursor: default;
 }
 
 header .containerTopicos .topico {
-    padding: 16px 16px 16px 16px;
+    padding: 16px 16px 13px 16px;
     width: 100%;
     color: var(--white-transparent);
     font-weight: bold;
@@ -105,7 +105,7 @@ header .containerTopicos .topico {
 
 header .containerTopicos .topico.active {
     border-bottom: 3px solid var(--white);
-    padding-bottom: 14px;
+    padding-bottom: 11px;
     color: var(--white);
 }
 
