@@ -351,7 +351,7 @@ main .container .scroll #page3 .chamadas .video, .audio {
 
 
 
-@media screen and (min-width: 501px) and (min-height: 351px) {
+@media screen and (min-width: 501px) and (min-height: 391px) {
     header, main, .modalDeAbertura {
         display: none;
     }
