@@ -457,6 +457,10 @@ main .rodape p a:active {
         padding-bottom: 9px;
     }
 
+    main {
+        padding-top: 104px;
+    }
+
     main .containerMenu .opcaoMenu {
         font-size: 16px;
     }
