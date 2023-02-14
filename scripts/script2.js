@@ -26,6 +26,8 @@ let iconArquivadas = document.querySelector('.iconArquivadas')
 
 let iconPen = document.querySelector('.iconPen')
 
+let iconPen2 = document.querySelector('.iconPen2')
+
 let imgGroup = document.querySelector('#group')
 
 let iconForwarded = document.querySelector('.iconForwarded')
@@ -371,7 +373,7 @@ function changeTheme(event) {
         
         whatsappIcon.setAttribute('src', 'images/icons/whatsapp2.svg')
 
-        activeBtnDigitar2.setAttribute('src', 'images/icons/penLight.svg')
+        iconPen2.setAttribute('src', 'images/icons/penLight.svg')
     } else {
         whatsapp.setAttribute('src', 'images/icons/whatsapp.svg')
         meta.setAttribute('src', 'images/icons/meta.svg')
@@ -390,7 +392,7 @@ function changeTheme(event) {
         
         whatsappIcon.setAttribute('src', 'images/icons/whatsapp.svg')
 
-        activeBtnDigitar2.setAttribute('src', 'images/icons/pen-solid.svg')
+        iconPen2.setAttribute('src', 'images/icons/pen-solid.svg')
     }
 }
 
