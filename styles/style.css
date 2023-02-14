@@ -341,7 +341,6 @@ main .rodape .cadeado {
 main .rodape p {
     font-size: 14px;
     color: var(--grey);
-    width: 100%;
     text-align: center;
     white-space: normal;
 }
