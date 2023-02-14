@@ -440,3 +440,72 @@ main .rodape p a:active {
         align-items: center;
     }
 }
+
+
+@media screen and (max-width: 399px) {
+    header .containerTopicos .cam {
+        font-size: 16px;
+        padding: 11px 6px;
+    }
+
+    header .containerTopicos .topico {
+        padding: 14px 14px 11px 14px;
+        font-size: 15px;
+    }
+
+    header .containerTopicos .topico.active {
+        padding-bottom: 9px;
+    }
+
+    main .containerMenu .opcaoMenu {
+        font-size: 16px;
+    }
+
+    main .container .scroll .containerPage .containerArquivadas .iconArquivadas {
+        height: 18px;
+    }
+
+    main .container .scroll .containerPage .containerArquivadas p {
+        font-size: 17px;
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items h3 {
+        font-size: 17px;
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items span {
+        font-size: 15px;
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items p {
+        width: 96%;
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items .iconSticky {
+        height: 14px;    
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items .checks {
+        height: 13px;
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items .iconVideo {
+        font-size: 13px;    
+    }
+
+    main .container .scroll .containerPage .conteudoItem div .items .icons {
+        height: 16px;
+    }
+
+    main .container .scroll .containerPage .conteudoItem .periodo {
+        font-size: 14px;
+    }
+
+    main .rodape .cadeado {
+        font-size: 12px;
+    }
+
+    main .rodape p {
+        font-size: 13px;
+    }
+}
