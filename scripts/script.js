@@ -232,18 +232,18 @@ function scrollPosition(event) {
             activeBtnDigitar.style.bottom = '95px'
             exibirBtn()
             
-            scroll.scrollLeft = 362
+            scroll.scrollLeft = 372
         })
         
         topicos[2].addEventListener('click', () => {
-            scroll.scrollLeft = 695
+            scroll.scrollLeft = 645
         })
         
         
         scroll.addEventListener('scroll', () => {
             let scrollX = scroll.scrollLeft
             
-            if (scrollX < 350) {
+            if (scrollX < 330) {
                 topicos[0].classList.add('active')
                 topicos[1].classList.remove('active')
                 topicos[2].classList.remove('active')
@@ -258,7 +258,7 @@ function scrollPosition(event) {
                 ocultarBtn()
         
                 menuConversas()
-            } else if (scrollX < 680) {
+            } else if (scrollX < 600) {
                 topicos[1].classList.add('active')
                 topicos[0].classList.remove('active')
                 topicos[2].classList.remove('active')
@@ -267,8 +267,8 @@ function scrollPosition(event) {
         
                 exibirBtn()
        
-                btnDigitar2.style.bottom = '95px'
-                activeBtnDigitar2.style.bottom = '95px'
+                btnDigitar.style.bottom = '95px'
+                activeBtnDigitar.style.bottom = '95px'
         
                 iconCam()
         
@@ -298,11 +298,11 @@ function scrollPosition(event) {
                 angulo.classList.remove('girarAngulo')
                         
                 rodape.style.marginBottom = '0'
-            } else if (scrollX > 350 && scrollX < 362) {
+            } else if (scrollX > 330 && scrollX < 372) {
                 scrollTop()
-            } else if (scrollX > 352 && scrollX < 694) {
+            } else if (scrollX > 332 && scrollX < 644) {
                 exibirBtn()
-            } else if (scrollX > 695) {
+            } else if (scrollX > 645) {
                 scrollTop()
             }
         })
