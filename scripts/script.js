@@ -232,18 +232,18 @@ function scrollPosition(event) {
             activeBtnDigitar2.style.bottom = '95px'
             exibirBtn2()
             
-            scroll.scrollLeft = 802
+            scroll.scrollLeft = 382
         })
         
         topicos[2].addEventListener('click', () => {
-            scroll.scrollLeft = 1665
+            scroll.scrollLeft = 795
         })
         
         
         scroll.addEventListener('scroll', () => {
             let scrollX = scroll.scrollLeft
             
-            if (scrollX < 790) {
+            if (scrollX < 370) {
                 topicos[0].classList.add('active')
                 topicos[1].classList.remove('active')
                 topicos[2].classList.remove('active')
@@ -258,7 +258,7 @@ function scrollPosition(event) {
                 ocultarBtn2()
         
                 menuConversas()
-            } else if (scrollX < 1650) {
+            } else if (scrollX < 780) {
                 topicos[1].classList.add('active')
                 topicos[0].classList.remove('active')
                 topicos[2].classList.remove('active')
@@ -298,11 +298,11 @@ function scrollPosition(event) {
                 angulo.classList.remove('girarAngulo')
                         
                 rodape.style.marginBottom = '0'
-            } else if (scrollX > 790 && scrollX < 802) {
+            } else if (scrollX > 370 && scrollX < 382) {
                 scrollTop()
-            } else if (scrollX > 792 && scrollX < 1649) {
+            } else if (scrollX > 372 && scrollX < 794) {
                 exibirBtn2()
-            } else if (scrollX > 1650) {
+            } else if (scrollX > 795) {
                 scrollTop()
             }
         })
