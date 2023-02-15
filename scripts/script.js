@@ -232,18 +232,18 @@ function scrollPosition(event) {
             activeBtnDigitar.style.bottom = '95px'
             exibirBtn()
             
-            scroll.scrollLeft = 368
+            scroll.scrollLeft = 360
         })
         
         topicos[2].addEventListener('click', () => {
-            scroll.scrollLeft = 735
+            scroll.scrollLeft = 720
         })
         
         
         scroll.addEventListener('scroll', () => {
             let scrollX = scroll.scrollLeft
-            document.querySelector(".ok").innerHTML = scrollX.toFixed()
-            if (scrollX < 280) {
+            
+            if (scrollX < 345) {
                 topicos[0].classList.add('active')
                 topicos[1].classList.remove('active')
                 topicos[2].classList.remove('active')
@@ -298,11 +298,11 @@ function scrollPosition(event) {
                 angulo.classList.remove('girarAngulo')
                         
                 rodape.style.marginBottom = '0'
-            } else if (scrollX > 280 && scrollX < 368) {
+            } else if (scrollX > 345 && scrollX < 360) {
                 scrollTop()
-            } else if (scrollX > 282 && scrollX < 734) {
+            } else if (scrollX > 347 && scrollX < 719) {
                 exibirBtn()
-            } else if (scrollX > 735) {
+            } else if (scrollX > 720) {
                 scrollTop()
             }
         })
