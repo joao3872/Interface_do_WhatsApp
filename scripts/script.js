@@ -220,3 +220,96 @@ window.onscroll = function () {
     
     prevScrollpos = currentScrollPos
 }
+
+
+
+const screenPortrait = window.matchMedia('(max-width: 399px)')
+
+function scrollPosition(event) {
+    if (event.matches) {
+        topicos[1].addEventListener('click', () => {
+            btnDigitar2.style.bottom = '95px'
+            activeBtnDigitar2.style.bottom = '95px'
+            exibirBtn2()
+            
+            scroll.scrollLeft = 802
+        })
+        
+        topicos[2].addEventListener('click', () => {
+            scroll.scrollLeft = 1665
+        })
+        
+        
+        scroll.addEventListener('scroll', () => {
+            let scrollX = scroll.scrollLeft
+            
+            if (scrollX < 790) {
+                topicos[0].classList.add('active')
+                topicos[1].classList.remove('active')
+                topicos[2].classList.remove('active')
+                
+                qtdMensagens.classList.add('active2')
+                
+                iconChat()
+        
+                btnDigitar.style.display = 'none'
+                activeBtnDigitar.style.display = 'none'
+                
+                ocultarBtn2()
+        
+                menuConversas()
+            } else if (scrollX < 1650) {
+                topicos[1].classList.add('active')
+                topicos[0].classList.remove('active')
+                topicos[2].classList.remove('active')
+                
+                qtdMensagens.classList.remove('active2')
+        
+                exibirBtn2()
+       
+                btnDigitar2.style.bottom = '95px'
+                activeBtnDigitar2.style.bottom = '95px'
+        
+                iconCam()
+        
+                menuStatus()
+            } else {
+                topicos[2].classList.add('active')
+                topicos[0].classList.remove('active')
+                topicos[1].classList.remove('active')
+                
+                qtdMensagens.classList.remove('active2')
+        
+                iconCall()
+        
+                ocultarBtn2()
+        
+                menuChamadas()
+        
+                containerRevelarEOcultar.style.display = 'none'
+                angulo.classList.remove('girarAngulo')
+        
+                rodape.style.marginBottom = '0'
+            }
+            
+            
+            if (scrollX < 80) {
+                containerRevelarEOcultar.style.display = 'none'
+                angulo.classList.remove('girarAngulo')
+                        
+                rodape.style.marginBottom = '0'
+            } else if (scrollX > 790 && scrollX < 802) {
+                scrollTop()
+            } else if (scrollX > 792 && scrollX < 1649) {
+                exibirBtn2()
+            } else if (scrollX > 1650) {
+                scrollTop()
+            }
+        })
+        
+    }
+}
+
+screenPortrait.addListener(scrollPosition)
+
+scrollPosition(screenPortrait)
