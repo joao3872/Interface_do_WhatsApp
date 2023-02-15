@@ -242,7 +242,7 @@ function scrollPosition(event) {
         
         scroll.addEventListener('scroll', () => {
             let scrollX = scroll.scrollLeft
-            document.querySelector(".container_titulo h3").innerHTML = scrollX.toFixed()
+            document.querySelector(".ok").innerHTML = scrollX.toFixed()
             if (scrollX < 280) {
                 topicos[0].classList.add('active')
                 topicos[1].classList.remove('active')
