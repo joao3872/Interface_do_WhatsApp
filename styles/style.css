@@ -518,7 +518,7 @@ main .rodape p a:active {
     }
 
     main .container .scroll #page3 #containerCallLink div .tituloLink {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     main .container .scroll #page3 #containerCallLink div .textLink {
@@ -538,5 +538,13 @@ main .rodape p a:active {
 
     main .container .scroll .containerPage .conteudoItem #periodoGrupo {
         margin-left: -80px;
+    }
+
+    main .container .scroll #page3 #containerCallLink div .tituloLink {
+        font-size: 17px;
+    }
+
+    main .container .scroll #page3 #containerCallLink div .textLink {
+        font-size: 14px;
     }
 }
