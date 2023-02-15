@@ -502,7 +502,7 @@ main .rodape p a:active {
     }
 
     main .container .scroll .containerPage .conteudoItem .periodo {
-        font-size: 14px;
+        font-size: 12.5px;
     }
 
     main .rodape .cadeado {
@@ -511,5 +511,28 @@ main .rodape p a:active {
 
     main .rodape p {
         font-size: 13px;
+    }
+
+    main .container .scroll #page2 .containerStatus h5 {
+        font-size: 14px;
+    }
+
+    main .container .scroll #page3 #containerCallLink div .tituloLink {
+        font-size: 18px;
+    }
+
+    main .container .scroll #page3 #containerCallLink div .textLink {
+        font-size: 15px;
+    }
+
+    main .container .scroll #page3 .titulo {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    main .container .scroll .containerPage .conteudoItem div .items p {
+        width: 86%;
     }
 }
