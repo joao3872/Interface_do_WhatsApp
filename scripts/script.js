@@ -228,9 +228,9 @@ const screenPortrait = window.matchMedia('(max-width: 399px)')
 function scrollPosition(event) {
     if (event.matches) {
         topicos[1].addEventListener('click', () => {
-            btnDigitar2.style.bottom = '95px'
-            activeBtnDigitar2.style.bottom = '95px'
-            exibirBtn2()
+            btnDigitar.style.bottom = '95px'
+            activeBtnDigitar.style.bottom = '95px'
+            exibirBtn()
             
             scroll.scrollLeft = 382
         })
@@ -255,7 +255,7 @@ function scrollPosition(event) {
                 btnDigitar.style.display = 'none'
                 activeBtnDigitar.style.display = 'none'
                 
-                ocultarBtn2()
+                ocultarBtn()
         
                 menuConversas()
             } else if (scrollX < 780) {
@@ -265,7 +265,7 @@ function scrollPosition(event) {
                 
                 qtdMensagens.classList.remove('active2')
         
-                exibirBtn2()
+                exibirBtn()
        
                 btnDigitar2.style.bottom = '95px'
                 activeBtnDigitar2.style.bottom = '95px'
@@ -282,7 +282,7 @@ function scrollPosition(event) {
         
                 iconCall()
         
-                ocultarBtn2()
+                ocultarBtn()
         
                 menuChamadas()
         
@@ -301,7 +301,7 @@ function scrollPosition(event) {
             } else if (scrollX > 370 && scrollX < 382) {
                 scrollTop()
             } else if (scrollX > 372 && scrollX < 794) {
-                exibirBtn2()
+                exibirBtn()
             } else if (scrollX > 795) {
                 scrollTop()
             }
