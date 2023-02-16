@@ -2,6 +2,26 @@
 
 * Essa página foi desenvolvida, antes da primeira atualização do WhatsApp no ano de 2023. Data aproximada da primeira atualização de 2023: <a href="https://github.com/joao3872/Interface_do_WhatsApp/">27/01/2023</a>.
 
+### Orientation Portrait:
+
+<img src="images/portrait_light.gif" width="260px" height="500px" />
+
+### Orientation Portrait and Dark Mode:
+
+<img src="images/portrait_dark.gif" width="260px" height="500px" />
+
+### Orientation Landscape:
+
+<img src="images/" />
+
+### Orientation Landscape and Dark Mode:
+
+<img src="images/" />
+
+### Modal de Aviso, com Light Mode and Dark Mode no Desktop:
+
+<img src="images/whatsDesktop.gif" />
+
 ### Deploy:
 
 * #### <a href="https://joao3872.github.io/Interface_do_WhatsApp/" target="_blank">Acessar a Página</a>
@@ -51,7 +71,7 @@
 
 * #### Tirada por: Gabriela Sola
 
-* #### <a href="https://www.pexels.com/pt-br/foto/praia-litoral-cadeiras-de-praia-costa-14700501/"></a>
+* #### <a href="https://www.pexels.com/pt-br/foto/praia-litoral-cadeiras-de-praia-costa-14700501/">Acessar imagem</a>
 
 <img src="images/rosquinhas.png" />
 
