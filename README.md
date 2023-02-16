@@ -12,11 +12,11 @@
 
 ### Orientation Landscape:
 
-<img src="images/" />
+<img src="images/landscape_light.gif" />
 
 ### Orientation Landscape and Dark Mode:
 
-<img src="images/" />
+<img src="images/landscape_dark.gif" />
 
 ### Modal de Aviso, com Light Mode and Dark Mode no Desktop:
 
