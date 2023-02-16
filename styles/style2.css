@@ -410,7 +410,7 @@ main .container .scroll #page3 .chamadas .video, .audio {
         color: var(--white-media-transparent);
     }
     
-    main .container .scroll #page2 .conteudoItem div #statusOn, #statusOff, #statusOn2, #statusOff2, #status {
+    main .container .scroll #page2 .conteudoItem div #statusOn, #statusOn2, #status {
         border-color: var(--green-whatsapp-dark);
     }
     
