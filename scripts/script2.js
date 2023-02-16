@@ -423,7 +423,7 @@ function ocultarBtn2() {
 
 // Aplica mudanças de posicionamento na scrollX, caso, a tela do dispositivo esteja na orientação paisagem.
 
-const screenLandscape = window.matchMedia('(orientation: landscape)')
+const screenLandscape = window.matchMedia('(orientation: landscape)') && window.matchMedia("(min-width: 400px)")
 
 function positionScroll(event) {
     if (event.matches) {
