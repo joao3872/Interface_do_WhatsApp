@@ -49,7 +49,7 @@ function linksClick() {
                 topicos[0].classList.remove('active')
             
                 topicos[2].classList.remove('active')
-                
+                window.location.reload(false)
                 fixedNotFixed()
                 
                 btnDigitar.style.bottom = '95px'
@@ -144,78 +144,6 @@ function exibirBtn() {
 
 
 
-/*function scrolls() {
-    scroll.addEventListener('scroll', () => {
-        let scrollX = scroll.scrollLeft
-    
-        if (scrollX < 400) {
-            topicos[0].classList.add('active')
-            topicos[1].classList.remove('active')
-            topicos[2].classList.remove('active')
-        
-            qtdMensagens.classList.add('active2')
-                
-            iconChat()
-        
-            btnDigitar.style.display = 'none'
-            activeBtnDigitar.style.display = 'none'
-        
-            menuConversas()
-        } else if (scrollX < 810) {
-            topicos[1].classList.add('active')
-            topicos[0].classList.remove('active')
-            topicos[2].classList.remove('active')
-            qtdMensagens.classList.remove('active2')
-        
-            exibirBtn()
-       
-            btnDigitar.style.bottom = '95px'
-            activeBtnDigitar.style.bottom = '95px'
-        
-            iconCam()
-        
-            menuStatus()
-        } else {
-            topicos[2].classList.add('active')
-            topicos[0].classList.remove('active')
-            topicos[1].classList.remove('active')
-            qtdMensagens.classList.remove('active2')
-        
-            iconCall()
-        
-            ocultarBtn()
-        
-            menuChamadas()
-        
-            containerRevelarEOcultar.style.display = 'none'
-            angulo.classList.remove('girarAngulo')
-        
-            rodape.style.marginBottom = '0'
-        }
-    
-    
-        if (scrollX < 20) {
-            containerRevelarEOcultar.style.display = 'none'
-            angulo.classList.remove('girarAngulo')
-        
-            rodape.style.marginBottom = '0'
-        } else if (scrollX > 400 && scrollX < 412) {
-            scrollTop()
-        } else if (scrollX > 810) {
-            scrollTop()
-        }
-    })
-}*/
-
-
-/*function scrollTop() {
-    window.scrollTo({
-        top: 0
-    })
-}*/
-
-
-
 var prevScrollpos = window.pageYOffset
 
 window.onscroll = function () {
@@ -295,96 +223,3 @@ function scrolled() {
         rodape.style.marginBottom = '0'
     }
 }
-
-
-
-/*const screenPortrait = window.matchMedia('(max-width: 399px)')
-
-function scrollPosition(event) {
-    if (event.matches) {
-        topicos[1].addEventListener('click', () => {
-            btnDigitar.style.bottom = '95px'
-            activeBtnDigitar.style.bottom = '95px'
-            exibirBtn()
-            
-            scroll.scrollLeft = 375
-        })
-        
-        topicos[2].addEventListener('click', () => {
-            scroll.scrollLeft = 750
-        })
-        
-        
-        scroll.addEventListener('scroll', () => {
-            let scrollX = scroll.scrollLeft
-            
-            if (scrollX < 360) {
-                topicos[0].classList.add('active')
-                topicos[1].classList.remove('active')
-                topicos[2].classList.remove('active')
-                
-                qtdMensagens.classList.add('active2')
-                
-                iconChat()
-        
-                btnDigitar.style.display = 'none'
-                activeBtnDigitar.style.display = 'none'
-                
-                ocultarBtn()
-        
-                menuConversas()
-            } else if (scrollX < 735) {
-                topicos[1].classList.add('active')
-                topicos[0].classList.remove('active')
-                topicos[2].classList.remove('active')
-                
-                qtdMensagens.classList.remove('active2')
-        
-                exibirBtn()
-       
-                btnDigitar.style.bottom = '95px'
-                activeBtnDigitar.style.bottom = '95px'
-        
-                iconCam()
-        
-                menuStatus()
-            } else {
-                topicos[2].classList.add('active')
-                topicos[0].classList.remove('active')
-                topicos[1].classList.remove('active')
-                
-                qtdMensagens.classList.remove('active2')
-        
-                iconCall()
-        
-                ocultarBtn()
-        
-                menuChamadas()
-        
-                containerRevelarEOcultar.style.display = 'none'
-                angulo.classList.remove('girarAngulo')
-        
-                rodape.style.marginBottom = '0'
-            }
-            
-            
-            if (scrollX < 80) {
-                containerRevelarEOcultar.style.display = 'none'
-                angulo.classList.remove('girarAngulo')
-                        
-                rodape.style.marginBottom = '0'
-            } else if (scrollX > 360 && scrollX < 375) {
-                scrollTop()
-            } else if (scrollX > 362 && scrollX < 749) {
-                exibirBtn()
-            } else if (scrollX > 750) {
-                scrollTop()
-            }
-        })
-        
-    }
-}*/
-
-/*screenPortrait.addListener(scrollPosition)
-
-scrollPosition(screenPortrait)*/
