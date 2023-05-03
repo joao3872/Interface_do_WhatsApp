@@ -49,7 +49,7 @@ function linksClick() {
                 topicos[0].classList.remove('active')
             
                 topicos[2].classList.remove('active')
-                window.location.load(false)
+                
                 fixedNotFixed()
                 
                 btnDigitar.style.bottom = '95px'
