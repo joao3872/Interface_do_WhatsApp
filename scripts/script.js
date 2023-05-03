@@ -40,7 +40,7 @@ function linksClick() {
                 
                 qtdMensagens.classList.add('active2')
                 
-                scroll.scrollLeft = 0
+                fixedNotFixed()
             })
         } else if (topicos[i] == topicos[1]) {
             topicos[i].addEventListener('click', () => {
@@ -50,11 +50,11 @@ function linksClick() {
             
                 topicos[2].classList.remove('active')
                 
-                scroll.scrollLeft = 412
+                fixedNotFixed()
                 
                 btnDigitar.style.bottom = '95px'
                 activeBtnDigitar.style.bottom = '95px'
-                ocultarBtn()
+                exibirBtn()
                 
                 qtdMensagens.classList.remove('active2')
             })
@@ -64,7 +64,7 @@ function linksClick() {
                 topicos[0].classList.remove('active')
                 topicos[1].classList.remove('active')
                 
-                scroll.scrollLeft = 825
+                fixedNotFixed()
                 
                 qtdMensagens.classList.remove('active2')
             })
@@ -91,6 +91,15 @@ function linksClick() {
 }
 
 linksClick()
+
+
+function fixedNotFixed() {
+    scroll.style.position = 'fixed'
+
+    setTimeout(() => {
+        scroll.style.position = ''
+    }, 50)
+}
 
 
 
@@ -135,7 +144,7 @@ function exibirBtn() {
 
 
 
-function scrolls() {
+/*function scrolls() {
     scroll.addEventListener('scroll', () => {
         let scrollX = scroll.scrollLeft
     
@@ -196,14 +205,14 @@ function scrolls() {
             scrollTop()
         }
     })
-}
+}*/
 
 
-function scrollTop() {
+/*function scrollTop() {
     window.scrollTo({
         top: 0
     })
-}
+}*/
 
 
 
@@ -223,7 +232,73 @@ window.onscroll = function () {
 
 
 
-const screenPortrait = window.matchMedia('(max-width: 399px)')
+scroll.addEventListener('scroll', () => {
+    scrolled()
+})
+
+function scrolled() {
+    let scrollX = scroll.scrollLeft
+
+    let width = scroll.scrollWidth - scroll.clientWidth
+
+    const scrolled = ((scrollX / width) * 100).toFixed()
+
+    if (scrolled <= 33) {
+        topicos[0].classList.add('active')
+        topicos[1].classList.remove('active')
+        topicos[2].classList.remove('active')
+
+        qtdMensagens.classList.add('active2')
+
+        iconChat()
+
+        btnDigitar.style.display = 'none'
+        activeBtnDigitar.style.display = 'none'
+
+        menuConversas()
+
+        containerRevelarEOcultar.style.display = 'none'
+        angulo.classList.remove('girarAngulo')
+        
+        rodape.style.marginBottom = '0'
+    } else if (scrolled <= 66) {
+        topicos[1].classList.add('active')
+        topicos[0].classList.remove('active')
+        topicos[2].classList.remove('active')
+
+        qtdMensagens.classList.remove('active2')
+
+        exibirBtn()
+       
+        btnDigitar.style.bottom = '95px'
+        activeBtnDigitar.style.bottom = '95px'
+        
+        iconCam()
+        
+        menuStatus()
+    } else {
+        topicos[2].classList.add('active')
+        topicos[0].classList.remove('active')
+        topicos[1].classList.remove('active')
+
+        qtdMensagens.classList.remove('active2')
+
+        iconCall()
+        
+        ocultarBtn()
+        
+        menuChamadas()
+        
+        containerRevelarEOcultar.style.display = 'none'
+        angulo.classList.remove('girarAngulo')
+        
+        rodape.style.marginBottom = '0'
+    }
+}
+
+
+
+/*const screenPortrait = window.matchMedia('(max-width: 399px)')
 
 function scrollPosition(event) {
     if (event.matches) {
@@ -308,8 +383,8 @@ function scrollPosition(event) {
         })
         
     }
-}
+}*/
 
-screenPortrait.addListener(scrollPosition)
+/*screenPortrait.addListener(scrollPosition)
 
-scrollPosition(screenPortrait)
+scrollPosition(screenPortrait)*/
