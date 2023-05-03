@@ -81,7 +81,7 @@ main .container .scroll #page2 .containerStatus .containerRevelarEOcultar .conte
 
 
 
-main .container .scroll .containerPage .btnDigitar, .activeBtn2, .btnDigitar2, .active2Btn {
+main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
     display: none;
     background: var(--btn-light-grey);
     width: 45px;
@@ -94,10 +94,6 @@ main .container .scroll .containerPage .btnDigitar, .activeBtn2, .btnDigitar2, .
     animation: animarBtn .3s;
 }
 
-main .container .scroll .containerPage .btnDigitar2, .active2Btn {
-    display: none;
-}
-
 main .container .scroll #page2 .btnDigitar .activeBtn2 {
     padding: 14px;
 }
@@ -106,7 +102,7 @@ main .container .scroll #page2 .activeBtn2 .iconPen {
     height: 18px;
 }
 
-main .container .scroll #page2 .activeBtn2:active, .active2Btn:active {
+main .container .scroll #page2 .activeBtn2:active {
     background: var(--white-transparent);
 }
 
@@ -422,7 +418,7 @@ main .container .scroll #page3 .chamadas .video, .audio {
         opacity: .5;
     }
     
-    main .container .scroll .containerPage .btnDigitar, .activeBtn2, .btnDigitar2, .active2Btn {
+    main .container .scroll .containerPage .btnDigitar, .activeBtn2 {
         background: var(--btn-menu-dark);
     }
     
@@ -492,13 +488,5 @@ main .container .scroll #page3 .chamadas .video, .audio {
 
     main .container .scroll .containerPage .btnDigitar, .activeBtn2, .btnDigitar2, .active2Btn {
         display: none;
-    }
-
-    main .container .scroll #page2 .btnDigitar2 .active2Btn {
-        padding: 14px;
-    }
-
-    main .container .scroll #page2 .active2Btn .iconPen2 {
-        height: 18px;
     }
 }
