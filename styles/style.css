@@ -164,6 +164,7 @@ main .container .scroll {
     scroll-behavior: smooth;
     display: flex;
     overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 main .container .scroll .containerPage {
@@ -173,6 +174,7 @@ main .container .scroll .containerPage {
     flex-direction: column;
     background: var(--white);
     white-space: nowrap;
+    scroll-snap-align: start;
 }
 
 main .container .scroll .containerPage .conteudoItem, .containerArquivadas, #page3 #containerCallLink {
