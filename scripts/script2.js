@@ -26,8 +26,6 @@ let iconArquivadas = document.querySelector('.iconArquivadas')
 
 let iconPen = document.querySelector('.iconPen')
 
-let iconPen2 = document.querySelector('.iconPen2')
-
 let imgGroup = document.querySelector('#group')
 
 let iconForwarded = document.querySelector('.iconForwarded')
@@ -37,10 +35,6 @@ let iconCopy = document.querySelector('.iconCopy')
 let iconShare = document.querySelector('.iconShare')
 
 let whatsappIcon = document.querySelector('.whatsappIcon')
-
-let btnDigitar2 = document.querySelector('.btnDigitar2')
-
-let activeBtnDigitar2 = document.querySelector('.active2Btn')
 
 
 
@@ -404,26 +398,9 @@ prefersColorScheme.addListener(changeTheme)
 
 changeTheme(prefersColorScheme)
 
-
-
-function exibirBtn2() {
-    btnDigitar2.style.display = 'block'
-    activeBtnDigitar2.style.display = 'block'
-}
-
-function ocultarBtn2() {
-    btnDigitar2.style.bottom = '60px'
-    activeBtnDigitar2.style.bottom = '60px'
-        
-    setTimeout(() => {
-        btnDigitar2.style.display = 'none'
-        activeBtnDigitar2.style.display = 'none'
-    }, 200)
-}
-
 // Aplica mudanças de posicionamento na scrollX, caso, a tela do dispositivo esteja na orientação paisagem.
 
-const screenLandscape = window.matchMedia('(orientation: landscape)')
+/*const screenLandscape = window.matchMedia('(orientation: landscape)')
 
 function positionScroll(event) {
     if (event.matches) {
@@ -514,14 +491,8 @@ function positionScroll(event) {
 
         ocultarBtn2()
     }
-}
+}*/
 
-screenLandscape.addListener(positionScroll)
+/*screenLandscape.addListener(positionScroll)
 
-positionScroll(screenLandscape)
-
-// Recarrega a página, após a rotação da tela.
-
-window.addEventListener('orientationchange', () => {
-    window.location.reload()
-})
+positionScroll(screenLandscape)*/
