@@ -382,9 +382,9 @@ function changeTheme(event) {
 
         iconPen2.setAttribute('src', 'images/icons/penLight.svg')
 
-        for (let c = 0; c < cadeado.length; c++) {
+        /*for (let c = 0; c < cadeado.length; c++) {
             cadeado[c].setAttribute('src', 'images/icons/lock-solid-light.svg')
-        }
+        }*/
     } else {
         whatsapp.setAttribute('src', 'images/icons/whatsapp.svg')
         meta.setAttribute('src', 'images/icons/meta.svg')
@@ -410,9 +410,9 @@ function changeTheme(event) {
 
         iconPen2.setAttribute('src', 'images/icons/pen-solid.svg')
 
-        for (let c = 0; c < cadeado.length; c++) {
+        /*for (let c = 0; c < cadeado.length; c++) {
             cadeado[c].setAttribute('src', 'images/icons/lock-solid.svg')
-        }
+        }*/
     }
 }
 
