@@ -68,16 +68,18 @@ header .container_titulo {
     padding: 10px 3px 12px 18px;
 }
 
-header .container_titulo h3, .iconsHeader {
+header .container_titulo h3 {
     color: var(--white);
 }
 
 header .container_titulo .iconsHeader .iconSearch {
     padding: 10px;
+    height: 16px;
 }
 
 header .container_titulo .iconsHeader .iconEllipsis {
     padding: 10px 15px;
+    height: 16px;
 }
 
 header .container_titulo .iconsHeader .iconSearch:active, .iconEllipsis:active {
@@ -88,7 +90,7 @@ header .container_titulo .iconsHeader .iconSearch:active, .iconEllipsis:active {
 header .containerTopicos .cam {
     color: var(--white-transparent);
     padding: 13px 8px;
-    font-size: 18px;
+    height: 18px;
     cursor: default;
 }
 
@@ -254,7 +256,7 @@ main .container .scroll .containerPage .conteudoItem div .items .checks {
 }
 
 main .container .scroll .containerPage .conteudoItem div .items .iconVideo {
-    font-size: 14px;    
+    height: 14px;    
 }
 
 main .container .scroll .containerPage .conteudoItem div .items .icons {
@@ -262,11 +264,11 @@ main .container .scroll .containerPage .conteudoItem div .items .icons {
 }
 
 main .container .scroll .containerPage .conteudoItem div .items .microBlue {
-    color: var(--blue);
+    height: 16px;
 }
 
 main .container .scroll .containerPage .conteudoItem div .items .microGreen {
-    color: var(--green-whatsapp);
+    height: 16px;
 }
 
 main .container .scroll .containerPage .conteudoItem .periodo {
@@ -335,7 +337,7 @@ main .rodape {
 }
 
 main .rodape .cadeado {
-    font-size: 13px;
+    height: 13px;
     color: var(--grey);
     margin-right: 5px;
 }
@@ -367,11 +369,7 @@ main .rodape p a:active {
         background: var(--header-dark);
     }
     
-    header .container_titulo h3, .iconsHeader {
-        color: var(--white-media-transparent);
-    }
-    
-    header .containerTopicos .cam {
+    header .container_titulo h3 {
         color: var(--white-media-transparent);
     }
     
@@ -413,10 +411,6 @@ main .rodape p a:active {
         color: var(--white-media-transparent);
     }
     
-    main .container .scroll .containerPage .conteudoItem div .items .iconVideo {
-        color: var(--grey);
-    }
-    
     main .container .scroll .containerPage .conteudoItem .periodo {
         color: var(--white-media-transparent);
     }
@@ -424,10 +418,6 @@ main .rodape p a:active {
     main .container .scroll .containerPage .conteudoItem .containerMsgRecebida .mensagemRecebida, .qtdMensagens {
         background: var(--green-button);
         color: var(--background-dark);
-    }
-    
-    main .rodape .cadeado {
-        color: var(--white-transparent-media);
     }
     
     main .rodape p {
@@ -446,7 +436,7 @@ main .rodape p a:active {
 
 @media screen and (max-width: 399px) {
     header .containerTopicos .cam {
-        font-size: 16px;
+        height: 16px;
         padding: 11px 6px;
     }
 
@@ -496,7 +486,7 @@ main .rodape p a:active {
     }
 
     main .container .scroll .containerPage .conteudoItem div .items .iconVideo {
-        font-size: 13px;    
+        height: 13px;    
     }
 
     main .container .scroll .containerPage .conteudoItem div .items .icons {
@@ -508,7 +498,7 @@ main .rodape p a:active {
     }
 
     main .rodape .cadeado {
-        font-size: 12px;
+        height: 12px;
     }
 
     main .rodape p {
