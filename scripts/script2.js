@@ -36,6 +36,14 @@ let iconShare = document.querySelector('.iconShare')
 
 let whatsappIcon = document.querySelector('.whatsappIcon')
 
+let iconSearch = document.querySelector('.iconSearch')
+
+let iconEllipsis = document.querySelector('.iconEllipsis')
+
+let iconCam = document.querySelector('.iconCam')
+
+let cadeado = document.querySelectorAll('.cadeado')
+
 
 
 // Fecha a modal de abertura, após 350 milissegundos.
@@ -352,6 +360,11 @@ function changeTheme(event) {
     if (event.matches) {
         whatsapp.setAttribute('src', 'images/icons/whatsapp2.svg')
         meta.setAttribute('src', 'images/icons/meta2.svg')
+
+        iconSearch.setAttribute('src', 'images/icons/magnifying-glass-solid-light.svg')
+        iconEllipsis.setAttribute('src', 'images/icons/ellipsis-vertical-solid-light.svg')
+
+        iconCam.setAttribute('src', 'images/icons/camera-solid-light.svg')
         
         iconArquivadas.setAttribute('src', 'images/icons/arquivadas2.png')
         iconPen.setAttribute('src', 'images/icons/penLight.svg')
@@ -368,9 +381,18 @@ function changeTheme(event) {
         whatsappIcon.setAttribute('src', 'images/icons/whatsapp2.svg')
 
         iconPen2.setAttribute('src', 'images/icons/penLight.svg')
+
+        for (let c = 0; c < cadeado.length; c++) {
+            cadeado[c].setAttribute('src', 'images/icons/lock-solid-light.svg')
+        }
     } else {
         whatsapp.setAttribute('src', 'images/icons/whatsapp.svg')
         meta.setAttribute('src', 'images/icons/meta.svg')
+
+        iconSearch.setAttribute('src', 'images/icons/magnifying-glass-solid.svg')
+        iconEllipsis.setAttribute('src', 'images/icons/ellipsis-vertical-solid.svg')
+
+        iconCam.setAttribute('src', 'images/icons/camera-solid.svg')
         
         iconArquivadas.setAttribute('src', 'images/icons/arquivadas.png')
         iconPen.setAttribute('src', 'images/icons/pen-solid.svg')
@@ -387,6 +409,10 @@ function changeTheme(event) {
         whatsappIcon.setAttribute('src', 'images/icons/whatsapp.svg')
 
         iconPen2.setAttribute('src', 'images/icons/pen-solid.svg')
+
+        for (let c = 0; c < cadeado.length; c++) {
+            cadeado[c].setAttribute('src', 'images/icons/lock-solid.svg')
+        }
     }
 }
 
