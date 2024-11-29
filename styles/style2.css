@@ -46,7 +46,7 @@ main .container .scroll #page2 .containerStatus .revelarEOcultar {
 }
 
 main .container .scroll #page2 .containerStatus .revelarEOcultar .angulo {
-    color: var(--green-button);
+    height: 16px;
 }
 
 main .container .scroll #page2 .containerStatus .revelarEOcultar .girarAngulo {
