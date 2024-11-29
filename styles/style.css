@@ -90,8 +90,11 @@ header .container_titulo .iconsHeader .iconSearch:active, .iconEllipsis:active {
 header .containerTopicos .cam {
     color: var(--white-transparent);
     padding: 13px 8px;
-    height: 18px;
     cursor: default;
+}
+
+header .containerTopicos .cam .iconCam {
+    height: 18px;
 }
 
 header .containerTopicos .topico {
