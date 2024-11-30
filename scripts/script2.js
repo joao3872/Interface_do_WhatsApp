@@ -40,7 +40,7 @@ let iconSearch = document.querySelector('.iconSearch')
 
 let iconEllipsis = document.querySelector('.iconEllipsis')
 
-let iconCam = document.querySelector('.iconCam')
+//let iconCam = document.querySelector('.iconCam')
 
 let cadeado = document.querySelectorAll('.cadeado')
 
@@ -364,7 +364,7 @@ function changeTheme(event) {
         iconSearch.setAttribute('src', 'images/icons/magnifying-glass-solid-light.svg')
         iconEllipsis.setAttribute('src', 'images/icons/ellipsis-vertical-solid-light.svg')
 
-        iconCam.setAttribute('src', 'images/icons/camera-solid-light.svg')
+        //iconCam.setAttribute('src', 'images/icons/camera-solid-light.svg')
         
         iconArquivadas.setAttribute('src', 'images/icons/arquivadas2.png')
         iconPen.setAttribute('src', 'images/icons/penLight.svg')
@@ -392,7 +392,7 @@ function changeTheme(event) {
         iconSearch.setAttribute('src', 'images/icons/magnifying-glass-solid.svg')
         iconEllipsis.setAttribute('src', 'images/icons/ellipsis-vertical-solid.svg')
 
-        iconCam.setAttribute('src', 'images/icons/camera-solid.svg')
+        //iconCam.setAttribute('src', 'images/icons/camera-solid.svg')
         
         iconArquivadas.setAttribute('src', 'images/icons/arquivadas.png')
         iconPen.setAttribute('src', 'images/icons/pen-solid.svg')
